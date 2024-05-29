@@ -1,0 +1,198 @@
+/* Estilos para toda la página */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3a7bd5; /* Color naranja para la barra de navegación */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333; /* Color gris oscuro para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos específicos para cada sección */
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #0074D9; /* Color azul para todos los títulos de sección */
+    text-align: center;
+}
+
+section figure {
+    text-align: center;
+}
+
+section figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+section p {
+    text-align: justify;
+}
+
+/* Estilos específicos para la sección de filmografía y contactanos */
+
+#filmografia video, #contacto .contacto-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Estilos para la sección de contacto */
+section#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinear elementos a la izquierda */
+    position: relative; /* Para posicionar la imagen */
+    background-color: #f6f9fc; /* Color de fondo azul claro */
+    padding: 40px; /* Aumentar el espacio */
+}
+
+section#contacto form {
+    width: 100%; /* Ancho del formulario */
+    max-width: 500px; /* Ancho máximo */
+    background-color: #3a7bd5; /* Color azul */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+section#contacto form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* Color del texto */
+}
+
+section#contacto form input[type="text"],
+section#contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+section#contacto form textarea {
+    resize: vertical;
+}
+
+section#contacto form input[type="submit"] {
+    background-color: #fff;
+    color: #3a7bd5; /* Color azul */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section#contacto h2 {
+    color: #3a7bd5; /* Color azul */
+}
+
+/* Estilos para el mensaje de subtítulo */
+.subtitulo-contacto {
+    font-size: 16px;
+    color: #3a7bd5; /* Color del texto */
+    margin-top: 20px; /* Espacio arriba */
+}
+
+/* Estilos para la imagen de contacto */
+.contacto-img {
+    align-self: flex-end; /* Alinear a la derecha */
+}
+
+/* Texto adicional */
+.texto-adicional {
+    color: #3a7bd5; /* Color azul */
+    font-size: 16px;
+    margin-top: 20px;
+}
+/* Otros estilos */
+
+.texto-centralizado {
+    text-align: center;
+}
+
+/* Media queries para diseño adaptable */
+
+@media screen and (max-width: 480px) and (max-height: 800px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 710px) {
+    section {
+        margin-bottom: 20px;
+    }
+
+    section h2 {
+        font-size: 20px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 750px) {
+    section#contacto form {
+        max-width: 400px;
+    }
+
+    section#contacto form input[type="text"],
+    section#contacto form textarea {
+        font-size: 14px;
+    }
+
+    section#contacto form input[type="submit"] {
+        padding: 8px 16px;
+    }
+}

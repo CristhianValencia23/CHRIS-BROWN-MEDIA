@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog</title>
+    <!-- Vincular el archivo CSS correctamente -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Vincular la fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CHRIS BROWN MEDIA</h1> <!-- Nuevo título agregado -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#discografia">Discografía</a></li>
+                <li><a href="#filmografia">Filmografía</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section id="inicio">
+            <figure>
+                <img src="imagenes/Imagen1.jpg" alt="Imagen1">
+                <figcaption>Conoce acerca del artista de R&B más influyente de la última generación</figcaption>
+            </figure>
+            <div>
+                <p>¡Echa un vistazo a cada sección de nuestro sitio web!</p>
+            </div>
+        </section>
+
+        <section id="biografia">
+            <h2>BIOGRAFÍA</h2>
+            <figure>
+                <img src="imagenes/BIOGRAFÍA.jpg" alt="BIOGRAFÍA">
+                <figcaption>Chris Brown - Biografía</figcaption>
+            </figure>
+            <p>Christopher Maurice Brown (Tappahannock, Virginia; 5 de mayo de 1989),  ​conocido artísticamente como Chris Brown, es un cantante, compositor, bailarín y actor estadounidense. Según Billboard, Brown es uno de los cantantes de R&B más exitosos de su generación, muchos contemporáneos a menudo refieren a Chris como el rey del R&B.</p>
+        </section>
+
+        <section id="discografia">
+            <h2>Discografía</h2>
+            <figure>
+                <img src="imagenes/cbalbum.jpg" alt="Álbum 1">
+                <figcaption>CHRIS BROWN Mar 21, 2006 1er álbum, 16 tracks.</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/xclusive.jpg" alt="Álbum 2">
+                <figcaption>Xclusive, Abr 8, 2008 2do álbum, 16 tracks,</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/graffiti.jpg" alt="Álbum 3">
+                <figcaption>Graffiti, Dic 15, 2009 3er álbum, 13 tracks.</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/FAME.png" alt="Álbum 4">
+                <figcaption>FAME, Mar 22, 2011 4to álbum, 17 tracks.</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/fortune.jpg" alt="Álbum 5">
+                <figcaption>Fortune, Jul 3, 2012 5to álbum, 19 tracks.</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/xx.jpg" alt="Álbum 6">
+                <figcaption>X, Sep 15, 2014 6to álbum, 21 tracks.</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/royalty.jpg" alt="Álbum 7">
+                <figcaption>Royalty, Dic 18, 2015 7mo álbum, 18 tracks.</figcaption>
+            </figure>
+            <figure>
+                <img src="imagenes/hboafm.png" alt="Álbum 8">
+                <figcaption>HBOAFM, Nov 3
+                    , 2017 8vo álbum, 45 tracks.</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagenes/indigo.png" alt="Álbum 9">
+                    <figcaption>INDIGO, Jun 28, 2018 9vo álbum, 45 tracks.</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagenes/breezy.png" alt="Álbum 10">
+                    <figcaption>BREEZY, Jun 24, 2022 9vo álbum, 24 tracks.</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagenes/1111.jpg" alt="Álbum 11">
+                    <figcaption>11:11, Nov 10, 2023 10mo álbum, 22 tracks.</figcaption>
+                </figure>
+            </section>
+
+            <section id="filmografia">
+                <h2>Filmografía</h2>
+                <p>Chris Brown además de ser cantante, compositor versátil y bailarín, también ha incursionado en la actuación en apariciones en series de televisión como The O.C. y One on One y en el cine en películas como Stomp The Yard: Ritmo salvaje (Stomp The Yard) y This Christmas, la última con las estrellas Loretta Devine, Delroy Lindo y Regina King. Esta última película es un drama que cuenta la historia de una celebración de Navidad donde una familia se reúne por primera vez en cuatro años y cada uno lleva a cuestas sus propios problemas.</p>
+                <video controls>
+                    <source src="imagenes/video.mp4" type="video/mp4">
+                    Tu navegador no admite el elemento de video.
+                </video>
+                <p>A continuación un acceso directo a un video de una de sus escenas más icónicas en su filmografía, concretamente en la pelicula La Batalla Del Año.
+                </p>
+            </section>
+
+            <section id="contacto">
+                <h2>Contáctanos</h2>
+                <p>¡Gracias por llegar hasta aquí! A continuación verás una caja de formulario para que hagas comentarios acerca de cómo podemos mejorar la página o la información que hay en ella. Esto es muy importante ya que establece una comunicación con el usuario, lo cual es fundamental para nosotros. ¡Gracias!</p>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+                <!-- Ubicar la imagen "contact us.png" a la derecha del formulario -->
+                <img src="imagenes/contact us.png" alt="Contáctanos" class="contacto-img">
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Desarrollado por Cristhian Valencia</p>
+        </footer>
+
+    </body>
+    </html>
